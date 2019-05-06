@@ -6,7 +6,9 @@
 package com.yidaoyun.controller;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -15,6 +17,9 @@ import java.util.UUID;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
+import org.apache.tomcat.jni.Directory;
+import org.apache.tomcat.util.http.fileupload.FileUtils;
+import org.aspectj.util.FileUtil;
 import org.jboss.logging.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -330,6 +335,36 @@ public class AdminController {
 			return JsonResult.renderSuccess(orders);
 		}
 		return  JsonResult.renderFail("订单不存在");
+		
+	}
+	
+	/**
+	 * 上传文件
+	 * 
+	 */
+	@ResponseBody
+	@PostMapping("/upload")
+	public JsonResult upload(@RequestParam MultipartFile file, HttpServletRequest request) {
+		String path = request.getSession().getServletContext().getRealPath("/") + "img/";
+		File dirFile  = new File(path);
+		String oldName = file.getOriginalFilename();
+		String first = oldName.substring(0, oldName.indexOf("."));
+		String second = oldName.substring(oldName.indexOf("."),oldName.length());
+		String newName = new MD5().getMD5ofStr(first) + second;
+		File file2 = new File(path + newName);
+		if(!dirFile.exists()) {
+			dirFile.mkdirs();
+		}
+		
+		if(!file.isEmpty()) {
+			try {
+				FileUtil.copyStream(file.getInputStream(), new FileOutputStream(file2));
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		return JsonResult.renderSuccess("/img/"+ newName);
 		
 	}
 }
