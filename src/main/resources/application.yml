@@ -1,0 +1,34 @@
+#springboot相关配置
+spring:
+  freemarker:
+    template-loader-path: classpath:/html
+    suffix: .html
+    templateEncoding: UTF-8
+    content-type: text/html
+  datasource:
+    #驱动地址
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #数据库地址
+    url: jdbc:mysql://127.0.0.1:3306/wachat_mini_program?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&user=root&password=root&useSSL=true&serverTimezone=UTC
+    # springboot 2.0 整合了hikari连接池 ,据说这是目前性能最好的java数据库连接池
+    hikari:
+      #数据库用户名
+      username: root
+      #数据库密码
+      password: 123456
+  #jpa配置
+  jpa:
+    hibernate:
+      # 第一次建表create  后面用update，要不然每次重启工程会删除表并新建
+      ddl-auto: create
+    #是否打印SQL语句
+    show-sql: true
+  mvc:
+    #static-path-pattern: /static/**
+#内置Tomcat启动端口号
+server:
+  port: 8080
+  
+swagger2:
+  title: 斗学网接口文档
+  description: 斗学网接口文档

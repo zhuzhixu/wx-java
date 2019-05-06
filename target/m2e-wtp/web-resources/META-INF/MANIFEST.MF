@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: wechat_mini_program
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Zhu
+Implementation-Vendor-Id: com.yidaoyun
+Build-Jdk: 1.8.0_201
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/wechat_mini_program
+Created-By: Maven Integration for Eclipse
+

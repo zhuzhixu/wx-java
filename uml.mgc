@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="com.yidaoyun.service.impl.UserServiceImpl" x="345" y="553">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.yidaoyun.service.UserService"/>
+        <Association destinationClassName="com.yidaoyun.dao.UserDAO"
+            endpointName="userDAO" kind="Simple"/>
+        <Communication destinationClassName="com.yidaoyun.dao.UserDAO"/>
+    </Class>
+    <Class name="com.yidaoyun.service.CommodityService" x="638" y="123">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.yidaoyun.dao.OrderDAO" x="217" y="167">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.yidaoyun.dao.RechargeRecordDAO" x="632" y="624">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.yidaoyun.service.impl.ServeServiceImpl" x="902" y="538">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.yidaoyun.service.ServeService"/>
+        <Association destinationClassName="com.yidaoyun.dao.ServeDAO"
+            endpointName="serveDAO" kind="Simple"/>
+    </Class>
+    <Class name="com.yidaoyun.dao.ServeDAO" x="948" y="621">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.yidaoyun.service.impl.ServeTpeServiceImpl" x="1141" y="269">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.yidaoyun.service.ServeTypeService"/>
+        <Association
+            destinationClassName="com.yidaoyun.dao.ServeTypeDAO"
+            endpointName="serveTypeDAO" kind="Simple"/>
+    </Class>
+    <Class name="com.yidaoyun.service.ServeService" x="939" y="442">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.yidaoyun.service.UserService" x="378" y="442">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.yidaoyun.dao.ServeTypeDAO" x="1158" y="171">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.yidaoyun.service.impl.RechargeRecordServiceImpl"
+        x="611" y="546">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.yidaoyun.service.RechargeRecordService"/>
+        <Association
+            destinationClassName="com.yidaoyun.dao.RechargeRecordDAO"
+            endpointName="rechargeRecordDAO" kind="Simple"/>
+        <Communication destinationClassName="com.yidaoyun.dao.RechargeRecordDAO"/>
+    </Class>
+    <Class name="com.yidaoyun.controller.CommonController" x="540" y="227">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.yidaoyun.service.CommodityService"
+            endpointName="commodityService" kind="Simple"/>
+        <Association
+            destinationClassName="com.yidaoyun.service.RechargeRecordService"
+            endpointName="rechargeRecordService" kind="Simple"/>
+        <Association
+            destinationClassName="com.yidaoyun.service.OrderService"
+            endpointName="orderService" kind="Simple"/>
+        <Association
+            destinationClassName="com.yidaoyun.service.ServeTypeService"
+            endpointName="serveTypeService" kind="Simple"/>
+        <Association
+            destinationClassName="com.yidaoyun.service.ServeService"
+            endpointName="serveService" kind="Simple"/>
+        <Association
+            destinationClassName="com.yidaoyun.service.UserService"
+            endpointName="userService" kind="Simple"/>
+        <Communication destinationClassName="com.yidaoyun.service.ServeTypeService"/>
+        <Communication destinationClassName="com.yidaoyun.service.CommodityService"/>
+        <Communication destinationClassName="com.yidaoyun.service.ServeService"/>
+        <Communication destinationClassName="com.yidaoyun.service.UserService"/>
+        <Communication destinationClassName="com.yidaoyun.service.RechargeRecordService"/>
+        <Communication destinationClassName="com.yidaoyun.service.OrderService"/>
+    </Class>
+    <Class name="com.yidaoyun.dao.CommodityDAO" x="1032" y="38">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.yidaoyun.dao.UserDAO" x="388" y="634">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.yidaoyun.service.ServeTypeService" x="969" y="266">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.yidaoyun.service.impl.CommodityServiceImpl" x="560" y="14">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.yidaoyun.service.CommodityService"/>
+        <Association
+            destinationClassName="com.yidaoyun.dao.CommodityDAO"
+            endpointName="commodityDAO" kind="Simple"/>
+        <Communication destinationClassName="com.yidaoyun.dao.CommodityDAO"/>
+    </Class>
+    <Class name="com.yidaoyun.service.impl.OrderServiceImpl" x="197" y="270">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.yidaoyun.service.OrderService"/>
+        <Association destinationClassName="com.yidaoyun.dao.OrderDAO"
+            endpointName="orderDAO" kind="Simple"/>
+        <Communication destinationClassName="com.yidaoyun.dao.OrderDAO"/>
+    </Class>
+    <Class name="com.yidaoyun.service.RechargeRecordService" x="623" y="447">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.yidaoyun.service.OrderService" x="376" y="264">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+</ClassDiagram>

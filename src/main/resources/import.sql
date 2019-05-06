@@ -1,0 +1,16 @@
+INSERT INTO `wachat_mini_program`.`commodity` (`id`, `content`, `flag`, `img`, `imgs`, `name`, `price`) VALUES ('1', 'Android云存储客户端开发', '0', '/imgs/android-down.jpg', '/imgs/android-down.jpg,/imgs/android-down.jpg', 'Android云存储客户端开发', '48.00');
+INSERT INTO `wachat_mini_program`.`commodity` (`id`, `content`, `flag`, `img`, `imgs`, `name`, `price`) VALUES ('2', 'Docker容器技术与应用', '0', '/imgs/docker-down.jpg', '/imgs/docker-down.jpg,/imgs/docker-down.jpg', 'Docker容器技术与应用', '60.00');
+INSERT INTO `wachat_mini_program`.`commodity` (`id`, `content`, `flag`, `img`, `imgs`, `name`, `price`) VALUES ('3', 'Hadoop大数据平台构建和应用', '0', '/imgs/hadoop-down.jpg', '/imgs/android-down.jpg,/imgs/hadoop-down.jpg', 'Hadoop大数据平台构建和应用', '75.00');
+INSERT INTO `wachat_mini_program`.`commodity` (`id`, `content`, `flag`, `img`, `imgs`, `name`, `price`) VALUES ('4', '云存储技术与应用', '0', '/imgs/ycc-down.jpg', '/imgs/ycc-down.jpg,/imgs/ycc-down.jpg', '云存储技术与应用', '40.00');
+INSERT INTO `wachat_mini_program`.`commodity` (`id`, `content`, `flag`, `img`, `imgs`, `name`, `price`) VALUES ('5', '软件定义网络（SDN）技术与应用', '0', '/imgs/sdn-down.jpg', '/imgs/sdn-down.jpg,/imgs/sdn-down.jpg', '软件定义网络（SDN）技术与应用', '56.00');
+INSERT INTO `wachat_mini_program`.`commodity` (`id`, `content`, `flag`, `img`, `imgs`, `name`, `price`) VALUES ('6', 'JavaWeb云应用开发', '0', '/imgs/javaweb-down.jpg', '/imgs/javaweb-down.jpg,/imgs/javaweb-down.jpg', 'JavaWeb云应用开发', '92.00');
+INSERT INTO `wachat_mini_program`.`commodity` (`id`, `content`, `flag`, `img`, `imgs`, `name`, `price`) VALUES ('7', '云计算综合运维管理', '0', '/imgs/yjszhywgl-down.jpg', '/imgs/yjszhywgl-down.jpg,/imgs/yjszhywgl-down.jpg', '云计算综合运维管理', '51.00');
+INSERT INTO `wachat_mini_program`.`commodity` (`id`, `content`, `flag`, `img`, `imgs`, `name`, `price`) VALUES ('8', '视频直播APP应用开发', '0', '/imgs/videoapp.jpg', '/imgs/videoapp.jpg,/imgs/videoapp.jpg', '视频直播APP应用开发', '45.00');
+INSERT INTO `wachat_mini_program`.`commodity` (`id`, `content`, `flag`, `img`, `imgs`, `name`, `price`) VALUES ('9', '微信小程序应用开发', '0', '/imgs/wechat-down.jpg', '/imgs/wechat-down.jpg,/imgs/wechat-down.jpg', '微信小程序应用开发', '26.00');
+INSERT INTO `wachat_mini_program`.`commodity` (`id`, `content`, `flag`, `img`, `imgs`, `name`, `price`) VALUES ('10', '人脸识别和美化应用开发', '0', '/imgs/rlsb.jpg', '/imgs/rlsb.jpg,/imgs/rlsb.jpg', '人脸识别和美化应用开发', '29.00');
+INSERT INTO `wachat_mini_program`.`commodity` (`id`, `content`, `flag`, `img`, `imgs`, `name`, `price`) VALUES ('11', '大数据分析应用开发', '0', '/imgs/dsjfx.jpg', '/imgs/dsjfx.jpg,/imgs/dsjfx.jpg', '大数据分析应用开发', '120.00');
+INSERT INTO `wachat_mini_program`.`user` (`id`, `balance`, `cardnumber`, `flag`, `name`, `pasword`, `phone`, `shippingaddresscompany`, `shippingaddresshome`, `username`) VALUES ('1', '90000', '00000000000', '1', 'admin', 'e10adc3949ba59abbe56e057f20f883e', '1234567822', '无锡惠山区', '无锡滨湖区', 'admin');
+INSERT INTO `wachat_mini_program`.`serve_type` (`id`, `name`) VALUES ('1', '上门维修');
+INSERT INTO `wachat_mini_program`.`serve_type` (`id`, `name`) VALUES ('2', '上门取件');
+INSERT INTO `wachat_mini_program`.`serve_type` (`id`, `name`) VALUES ('3', '质量反馈');
+INSERT INTO `wachat_mini_program`.`serve_type` (`id`, `name`) VALUES ('4', '其他问题');
