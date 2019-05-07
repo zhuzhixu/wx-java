@@ -19,4 +19,8 @@ public interface CommodityService {
     List<Commodity> getAllCommodity();
     
     Commodity getCommodity(Long id);
+    
+    Commodity save(Commodity commodity);
+    
+    void delet(Long commodityID);
 }

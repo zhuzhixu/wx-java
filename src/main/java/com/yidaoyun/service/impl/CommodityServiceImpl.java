@@ -29,6 +29,16 @@ public class CommodityServiceImpl implements CommodityService {
 		return commodityDAO.getOne(id);
 	}
 
+	@Override
+	public Commodity save(Commodity commodity) {
+		return commodityDAO.save(commodity);
+	}
+
+	@Override
+	public void delet(Long id) {
+		commodityDAO.deleteById(id);
+	}
+
     
     
 }

@@ -367,4 +367,41 @@ public class AdminController {
 		return JsonResult.renderSuccess("/img/"+ newName);
 		
 	}
+	
+	/**
+	 * 保存商品
+	 * 
+	 */
+	@ResponseBody
+	@PostMapping("/addcommodity")
+	public JsonResult addOrder(HttpServletRequest request) {
+		String name = request.getParameter("name");
+		String price = request.getParameter("price");
+		String content = request.getParameter("content");
+		String img = request.getParameter("img");
+		String imgs = request.getParameter("imgs");
+		Commodity commodity = new Commodity();
+		commodity.setName(name);
+		commodity.setPrice(price);
+		commodity.setContent(content);
+		commodity.setImg(img);
+		commodity.setImgs(imgs);
+		commodity.setFlag(0);
+		Commodity commodity2 = commodityService.save(commodity);
+		if(commodity2 !=null) {
+			return JsonResult.renderSuccess("添加成功", commodity2);
+		}
+		return JsonResult.renderFail("添加失败");
+	}
+	
+	/**
+	 * 删除商品
+	 */
+	@ResponseBody
+	@PostMapping("deletecommodity")
+	public JsonResult deleteCommodity(HttpServletRequest request) {
+		String commodityId = request.getParameter("commodityId");
+		commodityService.delet(Long.parseLong(commodityId));
+		return JsonResult.renderSuccess("删除成功");
+	}
 }
